@@ -6,7 +6,7 @@ app.controller('personCtrl',function personCtrl($scope,$http)
 		$http({
 	        method: "POST",
 	        url: "../user/login.do",
-	        data:{'username':$scope.username
+	        data:{'username':$scope.username 
 	          },
 	          headers: {  
 	              'Content-Type': 'application/x-www-form-urlencoded'  
