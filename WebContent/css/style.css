@@ -1,0 +1,61 @@
+@charset "UTF-8";
+body
+{
+	background:url(../images/hot-pot0.jpg) no-repeat center center fixed;
+	-moz-animation:myfirst 20s;
+	animation-iteration-count:infinite;
+	animation-timing-function: linear;
+	overflow:hidden;
+}
+#MainBoard
+{
+	filter: url(blur.svg#blur);
+	background:url(../images/hot-pot0.jpg) no-repeat center center fixed;
+	-moz-animation:myfirst 20s;
+	animation-iteration-count:infinite;
+	animation-timing-function: linear;
+	width:1920px;
+	height:1080px;
+	filter: blur(10px);
+	z-index: 1;
+}
+#loginBoard
+{
+	position:absolute;
+	left:35%;
+	top:30%;
+	width:300px;
+	height:300px;
+	z-index: 2;
+	background-color: rgba(255, 255, 255, 0.2);
+	border: 1px solid rgba(183, 183, 183, 0.25);
+	padding-left:100px;
+	padding-top:100px;
+}
+#loginBoard img
+{
+	margin-right:5px;
+	width:20px;
+	height:20px;
+}
+#bt1
+{
+	margin-left:50px;
+	margin-top:20px;
+}
+.ipt
+{
+	margin-top:10px;
+	border: 1px solid #ccc; 
+    padding: 7px 0px;
+    border-radius: 3px; 
+    padding-left:5px; 
+    background:rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(183, 183, 183, 0.25);
+}
+@-moz-keyframes myfirst
+{
+25%  {background:url(../images/hotpot1.png) no-repeat center center fixed;}
+50%  {background:url(../images/hotpot2.JPG) no-repeat center center fixed;}
+75%  {background:url(../images/hotpot3.jpg) no-repeat center center fixed;}
+}
