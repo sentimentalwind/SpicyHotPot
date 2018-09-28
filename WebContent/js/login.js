@@ -10,7 +10,7 @@ app.controller('personCtrl',function personCtrl($scope,$http)
 	          },
 	          headers: {  
 	              'Content-Type': 'application/x-www-form-urlencoded'  
-	          },  //当post方式提交的时候需要加上这段来解决后台获取不到数据的问题
+	          },  //当post方式 提交的时候需要加上这段来解决后台获取不到数据的问题
 	          transformRequest: function ( data ) {  
 	              var str = '';  
 	              for( var i in data ) {  
