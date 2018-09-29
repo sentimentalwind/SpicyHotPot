@@ -67,7 +67,10 @@ app.controller('personCtrl',function personCtrl($scope,$http)
 	    		   $scope.warning2="用户名密码不匹配";
 	    		   $scope.userpass=" ";}
 	    		   else
+	    			   {
 	    			   $scope.warning2=" ";
+	    			   location.href="mainPage.jsp";
+	    			   }
 	          
 			  }, 
 			   function errorCallback(response) {
