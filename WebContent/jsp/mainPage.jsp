@@ -21,7 +21,7 @@
 </head>
 <body ng-app="mainPage" ng-controller="pageCtrl">
 <div class="container">
-		
+		  
 	<div class="row">
 		
 		<div class="span2">
