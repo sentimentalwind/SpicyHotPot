@@ -15,13 +15,11 @@
     <script src="${pageContext.request.contextPath}/js/jquery.flot.min.js"></script>
     <script src="${pageContext.request.contextPath}/js/jquery.flot.resize.js"></script>
     <script src="${pageContext.request.contextPath}/js/angular.min.js"></script>
-        <script src="${pageContext.request.contextPath}/js/mainPage.js"></script>
-<%--     <script src="${pageContext.request.contextPath}/js/angular-route.js"></script> --%>
+    <script src="${pageContext.request.contextPath}/js/mainPage.js"></script>
     </head>
 </head>
 <body ng-app="mainPage" ng-controller="pageCtrl">
 <div class="container">
-		  
 	<div class="row">
 		
 		<div class="span2">
@@ -168,72 +166,7 @@
 			</div>
 		
 		</div>
-		
-		<div class="row" ng-show="pan1">
-		
-			<div class="span5">
-			
-				<div class="slate">
-				
-					<div class="page-header">
-						<h2><i class="icon-signal pull-right"></i>营业利润</h2>
-					</div>
-					<div id="placeholder" style="height: 297px;"></div>
-				
-				</div>
-			
-			</div>
-		
-			<div class="span5">
-			
-				<div class="slate">
-				
-					<div class="page-header">
-						<h2><i class="icon-shopping-cart pull-right"></i>今日账单</h2>
-					</div>
-					
-					<table class="orders-table table">
-					<tbody>
-						<tr>
-							<td><a href="">#12345 - Joe Bloggs</a> <span class="label label-info">已结账</span></td>
-							<td>$112.00</td>
-						</tr>
-						<tr>
-							<td><a href="">#12345 - Joe Bloggs</a> <span class="label label-success">已结账</span></td>
-							<td>$112.00</td>
-						</tr>
-						<tr>
-							<td><a href="">#12345 - Joe Bloggs</a> <span class="label label-important">已结账</span></td>
-							<td>$112.00</td>
-						</tr>
-						<tr>
-							<td><a href="">#12345 - Joe Bloggs</a> <span class="label">已结账</span></td>
-							<td>$112.00</td>
-						</tr>
-						<tr>
-							<td><a href="">#12345 - Joe Bloggs</a> <span class="label label-inverse">已结账</span></td>
-							<td>$112.00</td>
-						</tr>
-						<tr>
-							<td><a href="">#12345 - Joe Bloggs</a> <span class="label label-warning">已结账</span></td>
-							<td>$112.00</td>
-						</tr>
-						<tr>
-							<td><a href="">#12345 - Joe Bloggs</a> <span class="label label-info">已结账</span></td>
-							<td>$112.00</td>
-						</tr>
-						<tr>
-							<td colspan="2"><a href="">View more orders</a></td>
-						</tr>
-					</tbody>
-					</table>
-
-				</div>
-			
-			</div>
-		
-		</div>
-		
+	
 		
 		<div ng-show="myVar">
         <div  ng-include="'ballance.jsp'"></div>

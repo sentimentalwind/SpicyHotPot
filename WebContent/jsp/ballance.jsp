@@ -1,29 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-	<meta charset="utf-8"> 
-    <title>686 Adminize</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    
-    <!-- Le styles -->
-    <link href="http://fonts.googleapis.com/css?family=Oxygen|Marck+Script" rel="stylesheet" type="text/css">
-    <link href="${pageContext.request.contextPath}/css/bootstrap.css" rel="stylesheet">
-    <link href="${pageContext.request.contextPath}/css/font-awesome.css" rel="stylesheet">
-    <link href="${pageContext.request.contextPath}/css/admin.css" rel="stylesheet">
-    
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-</head>    
-<body>
-			<div class="row">
+<div class="row">
 				
 				<div class="span10 listing-buttons">
 				
@@ -141,7 +116,7 @@
 				
 				<div class="modal hide fade" id="removeItem">
 					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">Ã—</button>
+						<button type="button" class="close" data-dismiss="modal">×</button>
 						<h3>Remove Item</h3>
 					</div>
 					<div class="modal-body">
@@ -156,12 +131,3 @@
 			
 				
 			</div>
-<!-- Le javascript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
-<script src="${pageContext.request.contextPath}/js/bootstrap.js"></script>
-
-
-</body>
-</html>
