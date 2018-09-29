@@ -18,7 +18,12 @@
 <input type="text"  class="ipt" ng-model="userpass"  /><br>
 <input type="button" id="bt1" class="button button-primary button-rounded button-small" ng-click="check1()" value="提交" />
 {{warning2}}
+
 </div>
+
+
+
+
 </body>
 
 <script src="${pageContext.request.contextPath}/js/login.js"></script>

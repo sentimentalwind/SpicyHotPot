@@ -15,10 +15,11 @@
     <script src="${pageContext.request.contextPath}/js/jquery.flot.min.js"></script>
     <script src="${pageContext.request.contextPath}/js/jquery.flot.resize.js"></script>
     <script src="${pageContext.request.contextPath}/js/angular.min.js"></script>
-    <script src="${pageContext.request.contextPath}/js/angular-route.js"></script>
+        <script src="${pageContext.request.contextPath}/js/mainPage.js"></script>
+<%--     <script src="${pageContext.request.contextPath}/js/angular-route.js"></script> --%>
     </head>
 </head>
-<body ng-app="">
+<body ng-app="mainPage" ng-controller="pageCtrl">
 <div class="container">
 		
 	<div class="row">
@@ -37,7 +38,7 @@
 					<a href="index.html"><i class="icon-home"></i>首页</a>
 				</li>
 				<li class="dropdown">
-					<a href="#" ng-model="aa"><i class="icon-home"></i>买单结算</a>
+					<a href="#" ng-click="display()"><i class="icon-home"></i>买单结算</a>
 				</li>
 				<li class="dropdown">
 					<a class="dropdown-toggle" data-toggle="collapse" data-target="#website-dropdown" href="#"><i class="icon-sitemap"></i>前台服务<b class="caret"></b></a>
@@ -128,7 +129,7 @@
 	
 	<div class="main-area dashboard">
 
-		<div class="row">
+		<div class="row" ng-show="pan1">
 		
 			<div class="span10">
 			
@@ -168,7 +169,7 @@
 		
 		</div>
 		
-		<div class="row">
+		<div class="row" ng-show="pan1">
 		
 			<div class="span5">
 			
@@ -232,7 +233,12 @@
 			</div>
 		
 		</div>
-		<div ng-show  ng-include="'ballance.jsp'"></div>
+		
+		
+		<div ng-show="myVar">
+        <div  ng-include="'ballance.jsp'"></div>
+       </div>
+		
 	</div>
 	
 	</div> 
