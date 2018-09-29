@@ -14,7 +14,7 @@
 <div  id ="loginBoard">
 <img src="${pageContext.request.contextPath}/icon/user.png" />
 <input type="text" class="ipt"  ng-model="username" ng-blur="check0()" />{{warning1}}<br>
-<img src="${pageContext.request.contextPath}/icon/Password.png" />
+<img src="${pageContext.request.contextPath}/icon/Password.png" /> 
 <input type="text"  class="ipt" ng-model="userpass"  /><br>
 <input type="button" id="bt1" class="button button-primary button-rounded button-small" ng-click="check1()" value="提交" />
 {{warning2}}
